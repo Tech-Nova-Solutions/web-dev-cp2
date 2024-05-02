@@ -1,6 +1,10 @@
 :root{
     --background-color: #f8faff;
     --font-color: #373535;
+    --card: #7b61ff;
+    --card2: #24a9ec;
+    --roxo:#7b61ff;
+    --rosa: #f1aefe;
 
 }
 *{
@@ -119,4 +123,29 @@ main{
     font-family: Arial, Helvetica, sans-serif;
 
     
+}
+#cards{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+}
+.card{
+    width: 312px;
+    height: 418px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, var(--roxo), var(--rosa));
+    gap: 10px;
+}
+.img-card{
+    width:260px;
+    height: 210px;
+    border-radius: 15px;
+    margin-top: -50px;
 }
