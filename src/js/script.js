@@ -22,21 +22,21 @@ let indexCor = 0;
 
 
 function mudarFundo() {
-    var mainContent = document.querySelector("main"); // Seleciona a tag main
-    var cards = document.querySelectorAll(".card"); // Usa querySelectorAll para selecionar todos os elementos com a classe .card
+    var mainContent = document.querySelector("main"); 
+    var cards = document.querySelectorAll(".card"); 
     var slogan = document.getElementById("texto");
-    var slide = document.getElementById("slideshow"); // Seleciona o elemento com o id slideshow
+    var slide = document.getElementById("slideshow"); 
 
-    // Define a cor de fundo da tag main
+    
     mainContent.style.backgroundColor = cores_fundo[indexCor];
     
-    // Define a cor do texto para todos os elementos com a classe .card
+    
     cards.forEach(function(card) {
         card.style.color = cores_texto[indexCor];
         card.style.backgroundImage = cores_cards[indexCor];
     });
 
-    // Define a cor do texto para o elemento com o id slideshow
+    
     slide.style.color = cores_texto[indexCor];
     slide.style.backgroundImage = cores_cards[indexCor];
     slogan.style.color = cores_texto[indexCor];
