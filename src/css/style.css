@@ -1,3 +1,8 @@
+:root{
+    --background-color: #f8faff;
+    --font-color: #373535;
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,29 +10,30 @@
 
 }
 body{
-    background-color: bisque;
+    background-color: var(--background-color);
 }
 header{
     width: 100%;
-    height: 50px;
+    height: 70px;
     display: flex;
     align-items:baseline;
-    justify-content: space-around;
+    justify-content: space-between;
     
     
 
 }
 #titulo{
     margin-top: 2%;
-    font-size: 35px;
+    font-size: 25px;
     font-family:'Courier New', Courier, monospace;
     color: #373535;
+    padding-left: 4%;
 }
 
 
 nav{
     width: 50%;
-    
+    padding-right: 4%;
     
 }
 
@@ -36,13 +42,20 @@ nav ul{
      display: flex;
      justify-content: space-between;
      
+     
 }
 
 
 
 nav ul li {
     list-style: none;
-      
+    width:60px;
+    height: 30px;
+    text-align: center;   
+}
+nav ul li:hover{
+    background-color: #373535;
+    border-radius: 5px;
 }
 nav ul li a{
     text-decoration: none;
@@ -51,4 +64,59 @@ nav ul li a{
 }
 nav ul li a:hover{
     color: #f8faff;
+    
+    
+}
+main{
+    display:flex;
+    flex-direction: column;
+   align-items: center;
+}
+#bikes{
+    width: 700px;
+    height: 500px;
+    border-radius: 50px;
+    
+}
+#slideshow{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right ,#7b61ff, #f1aefe);
+    align-items: center;
+    
+}
+
+#slogan{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+#texto{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    height:240px;
+    width: 920px;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+  
+    
+}
+#texto h3{
+    
+    font-size: 90px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#texto p{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
 }
