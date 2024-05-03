@@ -170,11 +170,13 @@ button:hover {
 }
 
 /* PAGINA DE LOGIN */
-#paginaLogin {
+#paginaLogin,
+#paginaSobre {
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
 }
-#login {
+#login,
+#sobre {
     border-radius: 15px;
     grid-column: 2 / 3;
     padding: 2rem;
@@ -247,6 +249,48 @@ button:hover {
     font-weight: 800;
 }
 
+/* ESTILIZANO O QUIZ */
+.perguntas {
+    display: grid;
+    row-gap: 1rem;
+    padding: 2rem;
+    grid-column: 2 / 3;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.pergunta  {
+    border-bottom: 1px solid black;
+    display: grid;
+    row-gap: 0.6rem;
+    justify-content: center;
+    font-family: var(--fonte-padrao);
+}
+.pergunta__titulo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+}
+.pergunta__opcao {
+    justify-self: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+.pergunta p {
+    justify-self: center;
+}
+
+.perguntas p {
+    font-size: 2rem;
+}
+
+/* PAGINA DE SOBRE */
+#sobre {
+    font-weight: 800;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
 /* RODAPE */
 footer {
     padding: 2rem 0;

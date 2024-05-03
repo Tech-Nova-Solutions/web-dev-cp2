@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/script-quiz.js" defer></script>
+    <title>Quiz - BikeCity</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">BikeCity</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="login.html">Login</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button>&larr; Página inicial</button>
+        <section class="perguntas">
+
+            <p>Pontos</p>
+            <p id="pontosUsuario"></p>
+
+            <div class="pergunta">
+                <h5 class="pergunta__titulo">Quantas rodas tem uma bicicleta convencional ?</h5>
+                <h5 class="pergunta__opcao">a. 4</h5>
+                <h5 class="pergunta__opcao">b. 3</h5>
+                <h5 class="pergunta__opcao">c. 2</h5>
+                <h5 class="pergunta__opcao">d. 1</h5>
+                <p>
+                    <input type="text" id="resposta1">
+                    <input type="submit" id="btnResposta1" value="Enviar">
+                </p>
+            </div>
+
+            <div class="pergunta">
+                <h5 class="pergunta__titulo">Qual é o componente responsável por mudar as marchas em uma bicicleta?</h5>
+                <h5 class="pergunta__opcao">a. Pedivela</h5>
+                <h5 class="pergunta__opcao">b. Cambio</h5>
+                <h5 class="pergunta__opcao">c. Pedal</h5>
+                <h5 class="pergunta__opcao">d. Guidão</h5>
+                <p>
+                    <input id="resposta2">
+                    <input type="submit" id="btnResposta2" value="Enviar">
+                </p>
+            </div>
+
+            <div class="pergunta">
+                <h5 class="pergunta__titulo">Qual é a parte da bicicleta onde você encontra os freios de mão?</h5>
+                <h5 class="pergunta__opcao">a. Selim</h5>
+                <h5 class="pergunta__opcao">b. Roda dianteira</h5>
+                <h5 class="pergunta__opcao">c. Guidão</h5>
+                <h5 class="pergunta__opcao">d. Quadro</h5>
+                <p>
+                    <input type="text" id="resposta3">
+                    <input type="submit" id="btnResposta3" value="Enviar">
+                </p>
+            </div>
+
+            <div class="pergunta">
+                <h5 class="pergunta__titulo">Qual é o tipo de pneu mais comum em bicicletas de estrada?</h5>
+                <h5 class="pergunta__opcao">a. Pneu stick</h5>
+                <h5 class="pergunta__opcao">b. Pneu de cravos</h5>
+                <h5 class="pergunta__opcao">c. Pneu tubular</h5>
+                <h5 class="pergunta__opcao">d. Pneu sem câmara de ar</h5>
+                <p>
+                    <input type="text" id="resposta4">
+                    <input type="submit" id="btnResposta4" value="Enviar">
+                </p>
+            </div>
+
+            <div class="pergunta">
+                <h5 class="pergunta__titulo">O que significa "MTB", um termo frequentemente usado no contexto de bicicletas?</h5>
+                <h5 class="pergunta__opcao">a. Montanha bike</h5>
+                <h5 class="pergunta__opcao">b. Multitool Bike</h5>
+                <h5 class="pergunta__opcao">c. Motorized Bike</h5>
+                <h5 class="pergunta__opcao">d. Mountain Terrain Bike</h5>
+                <p>
+                    <input type="text" id="resposta5">
+                    <input type="submit" id="btnResposta5" value="Enviar">
+                </p>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
