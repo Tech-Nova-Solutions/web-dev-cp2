@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <link rel="shortcut icon" href="src/assets/icone-bike.png">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="shortcut icon" href="/src/assets/icone-bike.png">
     <title>Login</title>
 </head>
 <body>
     <header>
+            <h1 id="titulo">BikeCity</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="login.html">Login</a></li>
 
+                </ul>
+            </nav>
     </header>
-    <main>
+    <main id="paginaLogin">
         <div id="login">
             <h2>Olá Seja Bem-vindo(a)!</h2>
             <p> Cadastre-se ou faça login para ter acesso ao nosso quiz exclusivo!</p>
-            <input type="email" placeholder=" Digite seu E-mail" id="email">
+            <input type="email" placeholder="Digite seu E-mail" id="email">
             <input type="password" placeholder="Digite sua Senha" id="pwd">
-            <p id="credencialIncorreta" style="color:red;"></p>
+            <p id="credencialIncorreta"></p>
             <button type="button" onclick="verificalogin()">Cadastrar</button>
         </div>
-    <footer>
 
-    </footer>
+    </main>
+        <footer><h5>@2024-todos os direitos reservados.</h5></footer>
 
     <script src="src/js/script.js"></script>
 </body>
