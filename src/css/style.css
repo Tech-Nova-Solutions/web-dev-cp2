@@ -1,173 +1,182 @@
-:root{
-    --background-color: #f8faff;
-    --font-color: #373535;
-    --card: #7b61ff;
-    --card2: #24a9ec;
-    --rosa: #f1aefe;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root{
+    --cor-primaria: #023535;
+    --cor-secundaria: #015958;
+    --cor-terciaria: #008F8C;
+    --cor-quaternaria:#0FC2C0;
+    --fonte-padrao: "Roboto", sans-serif;
 }
-*{
+
+/* DISPOSIÇÃO DOS CONTAINERES DA PAGINA */
+body {
+    display: grid;
+    background-color: var(--cor-secundaria);
+    row-gap: 2rem;
+    grid-template-areas: 
+                        "header header header"
+                        "main main main"
+                        "footer footer footer";
+}
+
+/* RESET CSS */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-}
-body{
-    background-color: var(--background-color);
-}
-main{
-    background-color: var(--background-color);
-}
-header{
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-    
-    
-
-}
-#titulo{
-    
-    font-size: 30px;
-    font-family:'Times New Roman', Times, serif;
-    color: #373535;
-    padding-left: 4%;
-    font-weight: bolder
-}
-
-
-nav{
-    width: 50%;
-    padding-right: 4%;
-    
-}
-
-nav ul{
-    width: 100%;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     
-     
-}
-
-
-
-nav ul li {
-    list-style: none;
-    width:100px;
-    height: 30px;
-    text-align: center;  
-    
-}
-nav ul li:hover{
-    background-color: #373535;
-    border-radius: 5px;
-}
-nav ul li a{
     text-decoration: none;
-    color: #373535;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-nav ul li a:hover{
-    color: #f8faff;
-    
-    
-}
-main{
-    display:flex;
-    flex-direction: column;
-   align-items: center;
-}
-#bikes{
-    width: 700px;
-    height: 500px;
-    border-radius: 50px;
-    
-}
-#slideshow{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(to right ,#7b61ff, #f1aefe);
-    align-items: center;
-    
+    list-style: none;
 }
 
-#slogan{
-    display: flex;
-    flex-direction: column;
-    height: 70vh;
-    width: 100%;
+header {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    background-color: var(--cor-primaria);
+    padding: 2rem;
+    display: grid;
     align-items: center;
-    justify-content: center;
-    
-}
-#texto{
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    height:240px;
-    width: 920px;
-    justify-content: center;
-    align-items: center;
-    color: var(--font-color);
-  
-    
-}
-#texto h3{
-    
-    font-size: 90px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-#texto p{
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-
-    
-}
-#cards{
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap:50px;
-}
-.card{
-    width: 312px;
-    height: 418px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, var(--roxo), var(--rosa));
-    gap: 10px;
-}
-.img-card{
-    width:260px;
-    height: 210px;
-    border-radius: 15px;
-    margin-top: -50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+                        "titulo menu";
 }
 
-footer{
-    background-image: linear-gradient(to right,var(--card), var(--rosa));
-    width: 100%;
-    height: 30px;
-    
-    
+header nav {
+    grid-area: menu;
 }
-footer h5{
-    font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
+
+#titulo {
+    font-weight: 800;
+    color: var(--cor-quaternaria);
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content: end;
+    column-gap: 1rem;
+    font-size: 1.5rem;
+}
+
+li a {
+    font-weight: 600;
+    color: var(--cor-quaternaria);
+    justify-items: end;
+    font-family: "Roboto", sans-serif;
+}
+
+li a:hover {
+    opacity: 0.7;
+}
+
+main {
+    grid-row: 2/3;
+    grid-column: 1/4;
+}
+
+#slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bikes {
+    width: 30rem;
+    height: 30rem;
+}
+
+#texto {
+    margin: 4rem;
+    display: grid;
+    row-gap: 0.4rem;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    justify-self: center;
+    font-weight: 800;
+    font-family: var(--fonte-padrao);
+    color: var(--cor-quaternaria);
+}
+
+p, h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--fonte-padrao);
+    color: var(--cor-quaternaria);
+}
+
+h4 {
+    font-weight: 800;
+    color: rgb(0, 154, 0)
+}
+
+#cards {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4rem;
+    grid-template-areas: "bike1 bike2 bike3";
+}
+
+.card {
     text-align: center;
-    padding-bottom: -20px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: all .5s;
+}
+
+.card:hover {
+    padding: 3rem;
+}
+
+.card .img-card {
+    width: 20rem;
+    height: 20rem;
+}
+
+.bike1 {
+    grid-area: bike1;
+}
+.bike2 {
+    grid-area: bike2;
+}
+.bike3 {
+    grid-area: bike3;
+}
+
+button {
+    background-color: var(--cor-primaria);
+    color: var(--cor-quaternaria);
+    font-weight: 800;
+    justify-self: center;
+    border: none;
+    border-radius: 16px;
+    padding: 1rem;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+footer {
+    padding: 2rem 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    grid-row: 3/4;
+    grid-column: 1/4;
+    color: var(--cor-quaternaria);
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-family: var(--fonte-padrao);
 }
