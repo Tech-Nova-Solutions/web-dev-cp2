@@ -48,4 +48,37 @@ function mudarFundo() {
     indexCor = (indexCor + 1) % cores_fundo.length;
 }
 
+function verificalogin(){
+    let email = document.getElementById('email').value;
+    let senha = document.getElementById('pwd').value;
+    let credencialIncorreta = document.getElementById('credencialIncorreta');
 
+    if(email === 'admin@gmail.com' && senha === '1234'){
+        window.open('quiz.html');
+    }
+    else if(email === '' || senha === ''){
+        credencialIncorreta.innerHTML = 'Preencha os campos vazios!'
+
+    }
+    else{
+        credencialIncorreta.innerHTML = 'E-mail e/ou Senha inválidos';
+    }
+}
+
+function verificaCampo(){
+
+    let nome = document.getElementById('nome').value; 
+    let tel = document.getElementById('tel').value;
+    let email =document.getElementById('email').value;
+    let aviso = document.getElementById('aviso');// PARA MOSTRAR NA TELA QUANDO ESTIVER VAZIO
+
+    if(nome === '' || tel === '' || email ===''){
+        aviso.innerHTML = 'Preencha os campos vazios !';
+        aviso.style.color = 'red';
+    }
+    else{
+        aviso.innerHTML = 'Formulário enviado com sucesso!';
+        aviso.style.color = 'green';
+    }
+
+}
