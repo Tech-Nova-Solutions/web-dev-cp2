@@ -1,7 +1,3 @@
-//alert("Seja Bem-Vindo(a)");
-
-
-
 let imagens= ['src/assets/bike1.webp', 'src/assets/bike2.png', 'src/assets/bike3.webp','src/assets/bike4.png','src/assets/bike5.webp'];
 let index=0;
 let time = 3000;
@@ -72,13 +68,28 @@ function verificaCampo(){
     let email =document.getElementById('email').value;
     let aviso = document.getElementById('aviso');// PARA MOSTRAR NA TELA QUANDO ESTIVER VAZIO
 
-    if(nome === '' || tel === '' || email ===''){
+    if(nome === '' || tel === '' || email ==='') {
         aviso.innerHTML = 'Preencha os campos vazios !';
         aviso.style.color = 'red';
-    }
-    else{
+    } else {
         aviso.innerHTML = 'Formulário enviado com sucesso!';
         aviso.style.color = 'green';
     }
 
+}
+
+function verificarCampoContato() {
+    let contatoNome = document.querySelector('#nome').value;
+    let contatoEmail = document.querySelector('#email').value;
+    let contatoMensagem = document.querySelector('#mensagem').value;
+    let avisoContato = document.querySelector('#avisoContato');
+
+    if (contatoNome == '' || contatoEmail == '' || contatoMensagem == '') {
+        avisoContato.innerHTML = 'Preencha os campos vazios !';
+        avisoContato.style.color = 'red';
+    } else {
+        avisoContato.innerHTML = '';
+        avisoContato.innerHTML = 'Formulário enviado com sucesso!';
+        avisoContato.style.color = 'green';
+    }
 }
