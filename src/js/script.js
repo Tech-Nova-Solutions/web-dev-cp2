@@ -18,9 +18,9 @@ function slideShow(){
 }
 slideShow();
 
-var cores_fundo = ["#f8faff", "#373535"];
-var cores_cards = ["linear-gradient(to right, #7b61ff, #f1aefe)", "linear-gradient(to right, #7b61ff, #24a9ec)"];
-var cores_texto = ["#373535", "#f8faff"];
+var cores_fundo = ["#f8faff", "#373535", "#C3347F"];
+var cores_cards = ["linear-gradient(to right, #7b61ff, #f1aefe)", "linear-gradient(to right, #7b61ff, #24a9ec)", "#C3F7F3"];
+var cores_texto = ["#373535", "#f8faff", "#C63493"];
 let indexCor = 0;
 
 
