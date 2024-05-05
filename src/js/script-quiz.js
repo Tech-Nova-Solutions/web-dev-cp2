@@ -90,15 +90,25 @@ pontosUsuario.textContent = `${pontosContagem}`;
 gabaritoDiv.innerHTML = `
 <h2>Gabarito:</h2>
 <ol>
-    <li>Quantas rodas tem uma bicicleta convencional? Resposta: c</li>
-    <li>Qual é o componente responsável por mudar as marchas em uma bicicleta? Resposta: b</li>
-    <li>Qual é a parte da bicicleta onde você encontra os freios de mão? Resposta: c</li>
-    <li>Qual é o tipo de pneu mais comum em bicicletas de estrada? Resposta: a</li>
-    <li>O que significa "MTB", um termo frequentemente usado no contexto de bicicletas? Resposta: a</li>
-    <li>Qual é o material mais comum usado para fazer o quadro de uma bicicleta? Resposta: a</li>
-    <li>Qual é o nome da parte da bicicleta onde você encaixa o pé para pedalar? Resposta: a</li>
-    <li>Em uma bicicleta, qual é o nome da parte que conecta o guidão ao tubo de direção? Resposta: a</li>
-    <li>Qual é o nome dado ao conjunto de engrenagens na frente da bicicleta, ligadas aos pedais? Resposta: c</li>
-    <li>O que é necessário para aumentar a velocidade em uma bicicleta equipada com marchas? Resposta: a</li>
+    <li>Quantas rodas tem uma bicicleta convencional?</li>
+    <li>Resposta: C. Duas rodas<li>
+    <li>Qual é o componente responsável por mudar as marchas em uma bicicleta?</li>
+    <li>Resposta: B. Cambio<li>
+    <li>Qual é a parte da bicicleta onde você encontra os freios de mão?</li>
+    <li>Resposta: A. Selim<li>
+    <li>Qual é o tipo de pneu mais comum em bicicletas de estrada?</li>
+    <li>Resposta: A. Pneu stick<li>
+    <li>O que significa "MTB", um termo frequentemente usado no contexto de bicicletas?</li>
+    <li>Resposta: A. Montanha bike<li>
+    <li>Qual é o material mais comum usado para fazer o quadro de uma bicicleta?</li>
+    <li>Resposta: A. Alumínio<li>
+    <li>Qual é o nome da parte da bicicleta onde você encaixa o pé para pedalar?</li>
+    <li>Resposta: A. Pedal<li>
+    <li>Em uma bicicleta, qual é o nome da parte que conecta o guidão ao tubo de direção?</li>
+    <li>Resposta: A. Mesa<li>
+    <li>Qual é o nome dado ao conjunto de engrenagens na frente da bicicleta, ligadas aos pedais?</li>
+    <li>Resposta: C. Pedivela<li>
+    <li>O que é necessário para aumentar a velocidade em uma bicicleta equipada com marchas?</li>
+    <li>Resposta: A. Mudar para uma marcha mais alta<li>
 </ol>
 `;
